@@ -9,7 +9,7 @@
  * While empty, the form validates and then offers one-tap buttons to
  * text (or email) the visitor's details to Tyler, so no lead is lost.
  */
-const FORM_ENDPOINT = "";
+const FORM_ENDPOINT = "https://formspree.io/f/xkjjkjvo";
 
 const TRN = {
   phone: "+16032338580",

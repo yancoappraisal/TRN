@@ -93,7 +93,7 @@ button { font: inherit; color: inherit; }
 .site-header.solid { background: rgba(7, 8, 9, 0.82); backdrop-filter: saturate(140%) blur(14px); border-bottom-color: var(--line); }
 .header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: var(--white); }
-.brand-badge { width: 40px; height: 40px; color: var(--white); }
+.brand-badge { width: 52px; height: auto; flex: none; }
 .brand-text { display: flex; flex-direction: column; line-height: 1; }
 .brand-name { font-family: var(--f-display); font-weight: 900; font-size: 1.35rem; letter-spacing: 0.14em; }
 .brand-sub { font-size: 0.62rem; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: var(--muted); margin-top: 5px; }
@@ -231,7 +231,7 @@ h2 { font-size: clamp(2.2rem, 4.6vw, 3.8rem); }
 .founder::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(7, 8, 9, 0.1) 0%, rgba(7, 8, 9, 0.55) 45%, rgba(7, 8, 9, 0.94) 70%); }
 .founder-inner { display: flex; justify-content: flex-end; padding-block: var(--sec); }
 .founder-card { max-width: 30rem; }
-.founder-badge { width: 56px; height: 56px; color: var(--white); margin-bottom: 28px; }
+.founder-badge { width: 280px; height: auto; margin: 0 0 40px -6px; }
 .founder-card h2 { font-size: clamp(2.6rem, 5vw, 4rem); }
 .founder-role { margin: 10px 0 24px !important; font-size: 0.82rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
 .founder-card > p:not(.label):not(.founder-role) { font-size: 1.08rem; }
@@ -377,7 +377,7 @@ h2 { font-size: clamp(2.2rem, 4.6vw, 3.8rem); }
 
 @media (max-width: 680px) {
   body { font-size: 16px; padding-bottom: 76px; }
-  .brand-badge { width: 34px; height: 34px; }
+  .brand-badge { width: 44px; }
   .hero { justify-content: flex-end; min-height: max(640px, 100svh); }
   .hero-media img { object-position: 70% 50%; }
   .hero-shade { background: linear-gradient(180deg, rgba(5, 6, 7, 0.65) 0%, rgba(5, 6, 7, 0.1) 26%, rgba(5, 6, 7, 0.55) 52%, rgba(7, 8, 9, 0.97) 82%); }
@@ -392,6 +392,7 @@ h2 { font-size: clamp(2.2rem, 4.6vw, 3.8rem); }
   .svc { min-height: 0; padding: 34px 26px 38px; }
   .row { grid-template-columns: 1fr; gap: 0; }
   .founder-inner { padding-top: 34vh; }
+  .founder-badge { width: 220px; margin-bottom: 32px; }
 
   .mbar {
     display: grid; grid-template-columns: 1fr 2fr; gap: 10px;
